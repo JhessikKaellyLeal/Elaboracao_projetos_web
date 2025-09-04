@@ -9,7 +9,78 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  
+  <body class="bg-light">
+
+    <!-- Inicio do Menu Superior -------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../img/logoPetAmigo.png" alt="Pet Amigo" width="40" height="40" class="me-2">
+          <span>Pet Amigo</span>
+        </a>
+        <div class="d-flex">
+          <a href="login.html" class="btn btn-outline-light">Voltar ao Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim do Menu Superior ----------------------------------------- -->
+
+    <!-- Inicio do Container Cadastro --------------------------------- -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="card shadow-lg p-4 rounded-4 form-card">
+
+        <!-- Formulário de Cadastro ----------------------------------- -->
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome completo:</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input type="text" class="form-control" id="cpf" maxlength="14" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" maxlength="15" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="mb-3 position-relative">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="senha" required>
+            <button type="button" class="btn btn-sm btn-outline-secondary position-absolute top-50 end-0 translate-middle-y me-2 toggle-password" data-target="senha">👁</button>
+          </div>
+
+          <div class="mb-4 position-relative">
+            <label for="confirmar" class="form-label">Confirmar Senha:</label>
+            <input type="password" class="form-control" id="confirmar" required>
+            <button type="button" class="btn btn-sm btn-outline-secondary position-absolute top-50 end-0 translate-middle-y me-2 toggle-password" data-target="confirmar">👁</button>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-purple">Cadastrar</button>
+          </div>
+        </form>
+        <!-- Fim do Formulário ----------------------------------------- -->
+
+      </div>
+    </div>
+    <!-- Fim do Container Cadastro ------------------------------------ -->
+
+    <!-- Inicio do Bootstrap JS --------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fim do Bootstrap JS ------------------------------------------ -->
+
+    <!-- Inicio do JS Custom ------------------------------------------ -->
+    <script src="js/scripts.js"></script>
+    <!-- Fim do JS Custom --------------------------------------------- -->
+
   </body>
 </html>
