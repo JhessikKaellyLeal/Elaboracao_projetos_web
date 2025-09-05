@@ -177,3 +177,10 @@ body {
   cursor: pointer;
 }
 /* Fim dos Botões de Senha ------------------------------- */
+
+
+/*configuração da área de login*/
+
+.login-card{
+  background-color: #bab4b45a;
+}
